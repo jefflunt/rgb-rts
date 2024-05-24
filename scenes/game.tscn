@@ -1,0 +1,39 @@
+[gd_scene load_steps=5 format=3 uid="uid://ifuayjui0i3r"]
+
+[ext_resource type="Script" path="res://scenes/game.gd" id="1_s1xo8"]
+[ext_resource type="PackedScene" uid="uid://c32kybwoakmyo" path="res://scenes/gold/gold.tscn" id="2_0fxtu"]
+[ext_resource type="PackedScene" uid="uid://gn16m0vmmf3b" path="res://scenes/harvester/harvester.tscn" id="3_pm80v"]
+[ext_resource type="PackedScene" uid="uid://cosocqpblpfe7" path="res://scenes/base/base.tscn" id="4_phsfa"]
+
+[node name="game" type="Node2D"]
+script = ExtResource("1_s1xo8")
+
+[node name="golds" type="Node2D" parent="."]
+
+[node name="gold" parent="golds" instance=ExtResource("2_0fxtu")]
+position = Vector2(276, 220)
+
+[node name="gold2" parent="golds" instance=ExtResource("2_0fxtu")]
+position = Vector2(650, 178)
+
+[node name="gold3" parent="golds" instance=ExtResource("2_0fxtu")]
+position = Vector2(826, 341)
+
+[node name="harvesters" type="Node2D" parent="."]
+
+[node name="harvester" parent="harvesters" instance=ExtResource("3_pm80v")]
+position = Vector2(201, 560)
+
+[node name="harvester2" parent="harvesters" instance=ExtResource("3_pm80v")]
+position = Vector2(455, 528)
+
+[node name="harvester3" parent="harvesters" instance=ExtResource("3_pm80v")]
+position = Vector2(698, 523)
+
+[node name="harvester4" parent="harvesters" instance=ExtResource("3_pm80v")]
+position = Vector2(939, 720)
+
+[node name="bases" type="Node2D" parent="."]
+
+[node name="base" parent="bases" instance=ExtResource("4_phsfa")]
+position = Vector2(425, 955)

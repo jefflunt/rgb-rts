@@ -1,0 +1,5 @@
+RGB Real-Time Strategy Game
+
+- resource to harvest
+- harvester/builder units
+- base (building)

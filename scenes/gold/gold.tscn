@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://c32kybwoakmyo"]
+
+[ext_resource type="Texture2D" uid="uid://dlkqby5uxxeck" path="res://scenes/gold/gold.png" id="1_gu6cq"]
+
+[node name="gold" type="Node2D"]
+
+[node name="img" type="Sprite2D" parent="."]
+texture = ExtResource("1_gu6cq")

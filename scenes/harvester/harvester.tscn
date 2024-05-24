@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://gn16m0vmmf3b"]
+
+[ext_resource type="Texture2D" uid="uid://dvot12gxjwnkn" path="res://scenes/harvester/harvester.png" id="1_7mn4t"]
+
+[node name="harvester" type="Node2D"]
+
+[node name="img" type="Sprite2D" parent="."]
+texture = ExtResource("1_7mn4t")
