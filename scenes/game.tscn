@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://ifuayjui0i3r"]
+[gd_scene load_steps=6 format=3 uid="uid://ifuayjui0i3r"]
 
 [ext_resource type="Script" path="res://scenes/game.gd" id="1_s1xo8"]
 [ext_resource type="PackedScene" uid="uid://c32kybwoakmyo" path="res://scenes/gold/gold.tscn" id="2_0fxtu"]
 [ext_resource type="PackedScene" uid="uid://gn16m0vmmf3b" path="res://scenes/harvester/harvester.tscn" id="3_pm80v"]
 [ext_resource type="PackedScene" uid="uid://cosocqpblpfe7" path="res://scenes/base/base.tscn" id="4_phsfa"]
+[ext_resource type="PackedScene" uid="uid://4jkam75cdpk0" path="res://scenes/player/player.tscn" id="5_25wje"]
 
 [node name="game" type="Node2D"]
 script = ExtResource("1_s1xo8")
@@ -37,3 +38,6 @@ position = Vector2(939, 720)
 
 [node name="base" parent="bases" instance=ExtResource("4_phsfa")]
 position = Vector2(425, 955)
+
+[node name="player" parent="." instance=ExtResource("5_25wje")]
+position = Vector2(1025, 582)
