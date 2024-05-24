@@ -1,8 +1,17 @@
-[gd_scene load_steps=2 format=3 uid="uid://gn16m0vmmf3b"]
+[gd_scene load_steps=3 format=3 uid="uid://gn16m0vmmf3b"]
 
 [ext_resource type="Texture2D" uid="uid://dvot12gxjwnkn" path="res://scenes/harvester/harvester.png" id="1_7mn4t"]
+[ext_resource type="Script" path="res://scenes/harvester/harvester.gd" id="1_34j1l"]
 
 [node name="harvester" type="Node2D"]
+script = ExtResource("1_34j1l")
 
 [node name="img" type="Sprite2D" parent="."]
 texture = ExtResource("1_7mn4t")
+
+[node name="debug_msg" type="RichTextLabel" parent="."]
+offset_left = 19.0
+offset_top = 41.0
+offset_right = 198.0
+offset_bottom = 185.0
+scroll_active = false

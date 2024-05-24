@@ -22,7 +22,7 @@ position = Vector2(826, 341)
 
 [node name="harvesters" type="Node2D" parent="."]
 
-[node name="harvester" parent="harvesters" instance=ExtResource("3_pm80v")]
+[node name="harvester1" parent="harvesters" instance=ExtResource("3_pm80v")]
 position = Vector2(201, 560)
 
 [node name="harvester2" parent="harvesters" instance=ExtResource("3_pm80v")]
@@ -38,6 +38,9 @@ position = Vector2(939, 720)
 
 [node name="base" parent="bases" instance=ExtResource("4_phsfa")]
 position = Vector2(425, 955)
+
+[node name="base2" parent="bases" instance=ExtResource("4_phsfa")]
+position = Vector2(995, 824)
 
 [node name="player" parent="." instance=ExtResource("5_25wje")]
 position = Vector2(1025, 582)

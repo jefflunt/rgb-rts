@@ -1,5 +1,3 @@
 RGB Real-Time Strategy Game
 
-- harvesters should fetch gold
-- track total gold (player)
-- gold should have a limit
+- gold mines should have a limit
