@@ -3,6 +3,7 @@
 [ext_resource type="Script" path="res://scenes/player/player.gd" id="1_3k48i"]
 
 [sub_resource type="SystemFont" id="SystemFont_27t44"]
+subpixel_positioning = 0
 
 [sub_resource type="Theme" id="Theme_rbl3k"]
 default_font = SubResource("SystemFont_27t44")
