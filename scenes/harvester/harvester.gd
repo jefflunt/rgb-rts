@@ -1,5 +1,6 @@
 extends Node2D
 
+var clickable : bool = false
 var base : Node2D
 var gold : Node2D
 var carrying_gold : float = 0
@@ -36,6 +37,9 @@ func _ready():
 func _process(delta):
   debug_msg.text = "%s (%s, %s)\n(%d, %d)\n%d" % [state, gold != null, base != null, int(position.x), int(position.y), int(carrying_gold)]
   debug_msg.visible = debug
+  
+  if Input.is_action_just_pressed("select_unit") && clickable:
+    debug = !debug
 
 func _physics_process(delta):
   match state:
@@ -76,3 +80,8 @@ func _physics_process(delta):
         carrying_gold -= gold_transfer
         G.player().gold += gold_transfer
 
+func _on_click_handler_mouse_entered():
+  clickable = true
+
+func _on_click_handler_mouse_exited():
+  clickable = false

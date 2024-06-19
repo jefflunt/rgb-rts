@@ -1,7 +1,10 @@
-[gd_scene load_steps=3 format=3 uid="uid://gn16m0vmmf3b"]
+[gd_scene load_steps=4 format=3 uid="uid://gn16m0vmmf3b"]
 
 [ext_resource type="Texture2D" uid="uid://dvot12gxjwnkn" path="res://scenes/harvester/harvester.png" id="1_7mn4t"]
 [ext_resource type="Script" path="res://scenes/harvester/harvester.gd" id="1_34j1l"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_s7l3y"]
+size = Vector2(64, 64)
 
 [node name="harvester" type="Node2D"]
 script = ExtResource("1_34j1l")
@@ -15,3 +18,11 @@ offset_top = 41.0
 offset_right = 198.0
 offset_bottom = 185.0
 scroll_active = false
+
+[node name="click_handler" type="Area2D" parent="."]
+
+[node name="click_shape" type="CollisionShape2D" parent="click_handler"]
+shape = SubResource("RectangleShape2D_s7l3y")
+
+[connection signal="mouse_entered" from="click_handler" to="." method="_on_click_handler_mouse_entered"]
+[connection signal="mouse_exited" from="click_handler" to="." method="_on_click_handler_mouse_exited"]

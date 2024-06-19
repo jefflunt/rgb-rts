@@ -1,3 +1,4 @@
 RGB Real-Time Strategy Game
-
+- BUG: input handling clicking - it's passing events to all stacked units, but we need a way to
+  only get the click event to the unit on top
 - gold mines should have a limit
