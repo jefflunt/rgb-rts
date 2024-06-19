@@ -1,4 +1,8 @@
 RGB Real-Time Strategy Game
 - BUG: input handling clicking - it's passing events to all stacked units, but we need a way to
   only get the click event to the unit on top
+- FEATURE: control groups:
+  - click+drag to select units in a rectangle
+  - take the list of selected units and store it in a "selected units" array
+  - allow things like Ctrl+1, Ctrl+2, etc. to assigne the "selected units" into a control group
 - gold mines should have a limit
